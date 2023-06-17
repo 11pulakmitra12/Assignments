@@ -1,0 +1,33 @@
+{
+    "definition":{
+      "openapi":"3.0.0",
+      "info":{
+        "title":"Aeries Assignment",
+        "version":"1.0.0",
+        "description":""
+      },
+      "components": {
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "scheme": "bearer",
+                "bearerFormat": "JWT"
+            }
+        }
+    },
+    "security": [{
+      "bearerAuth": []
+  }],
+      "servers":[
+        {
+          "url":"http://localhost:3001/"
+        }
+      ]
+    },
+    "apis":[
+      "./swagger/routes/validationApi.js"
+    ]
+  }
+
+
+  
